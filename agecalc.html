@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #4e4c78;
+}
+
+.calculator-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    position: relative;
+    top: 200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 28px;
+    color: #3498db;
+}
+
+label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 18px;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+button:hover {
+    background-color: #c0392b;
+}
+
+p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #333;
+}
+
+    </style>
+</head>
+<body>
+<div class="calculator-container">
+    <h1>Age Calculator</h1>
+    <label for="birthdate">Date of Birth:</label>
+    <input type="date" id="birthdate">
+    <button id="calculateButton">Calculate Age</button>
+    <p id="result"></p>
+</div>
+<script src="agecalc.js"></script>
+</body>
+</html>
